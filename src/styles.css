@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+.extra_container{
+    width: 50%;
+}
+.extra_container div{
+    padding: 5px;
+}
+
+html, body { height: 100%;margin: 0;padding: 0;width: 100% }
+body { font-family: Roboto, "Helvetica Neue", sans-serif;}
+.signup-form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+
+}
+.form-input{
+    height: 35px;
+    margin-bottom: 20px; 
+    padding-left: 18px;
+    border: 1px solid black;
+
+}
+.form-btn{
+    height: 35px;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+.login-link{
+    margin-top: 12px;
+    color: blue;
+}

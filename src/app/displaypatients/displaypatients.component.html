@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>PATIENT INFORMATION</h1>
+    <table class="table">
+        <thead>
+            <th class="title"> Name</th>
+            <th class="title"> Id</th>
+            <th class="title"> Age</th>
+            <th class="title"> Tel</th>
+            <th class="title">Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pat of patients">
+                <td >{{pat.NAME}}</td>
+                <td >{{pat.ID}}</td>
+                <td >{{pat.AGE}}</td>
+                <td >{{pat.TEL}}</td>
+                <td class="action">
+                    <a class="btn btn-danger" [routerLink]="['/update/',pat.ID]">Update</a>
+                    <button  class="btn btn-outline-danger" (click)="deletePatient(pat.ID)">Delete</button>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    </div>

@@ -1,0 +1,28 @@
+<div class="side-nav-content">
+    <ul class="nav-list"[ngClass]="{'nav-list-open':sideNavStatus}">
+        <li class="nav-list-item">
+            <i class="fa fa-home"></i>
+            <span>
+                <a href="#">Home</a>
+            </span>
+        </li>
+        <li *ngIf="menuType==='admin'" class="nav-list-item">
+            <i class="fa fa-plus-square"></i>
+            <span>
+                <a  routerLink="patients" routerLinkActive="active">Patients</a>
+            </span>
+        </li>
+        <li *ngIf="menuType==='admin'" class="nav-list-item">
+            <i class="fa fa-user-md"></i>
+            <span>
+                <a href="#">Medical Staff</a>
+            </span>
+        </li>
+        <li class="nav-list-item">
+            <i class="fa fa-cog"></i>
+            <span>
+                <a href="#">Settings </a>
+            </span>
+        </li>
+    </ul>
+</div>

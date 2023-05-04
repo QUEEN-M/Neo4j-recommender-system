@@ -1,0 +1,37 @@
+.black-border{
+    border: 2px solid black;
+}
+app-header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 10.2vh;
+    z-index: 2;
+}
+main{
+    position: absolute;
+    width: 100%;
+    top:4rem;
+    z-index: 1;
+}
+app-side-nav{
+    position: absolute;
+    left: 0rem;
+    width: 55px;
+    height: 90vh;
+    box-shadow: 0px,0px 10px rgba(0,0,0,25%);
+    background-color: #102447;;
+    border-top:1px solid white ;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.app-side-nav-open{
+    width: 250px;
+}
+.display-area{
+    position: absolute;
+    left: 250px;
+    width: 90vh;
+}
+
+

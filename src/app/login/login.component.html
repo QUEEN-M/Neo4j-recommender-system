@@ -1,0 +1,12 @@
+<div class="login">
+    <h1>Login</h1>
+    <p>{{authError}}</p>
+    <form [formGroup]="ngForm" (ngSubmit)="login(ngForm)" autocomplete="off" class="signup-form">
+        <input class="form-input" type="text"   name="email"  placeholder="Enter Email" formControlName="email">
+        <input class="form-input" type="password" name="password" placeholder="Enter Password" formControlName="password">
+        
+        <input class="form-btn" type="submit" value="Login" name="submit" formControlName="submit">
+        <a class="login-link" routerLink="/sign-up"> Don't have an Account? Click here</a>
+
+    </form>
+</div>

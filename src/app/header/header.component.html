@@ -1,0 +1,43 @@
+<div class="header">
+    <div class="container-fluid">
+        <div class="side-nav-button" (click)="sideNavToggle()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-logo">
+            <img src="/assets/img/Logo2.png" alt="logo">
+        </div>
+
+        <div class="nav-items">
+            <div class="item">
+                <a href="/">Home</a>
+            </div>
+            <div class="item">
+                <a href="/">Dashboard</a>
+            </div>
+            <div class="item-button">
+                <a *ngIf="menuType==='default'"  routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+            </div>
+            <div class="item-button">
+                <a *ngIf="menuType==='default'"  routerLink="login" routerLinkActive="active" >Login</a> 
+            </div>
+            <div class="item-button">
+              <a *ngIf="menuType==='admin'"   >Admin</a> 
+          </div>
+            <div class="item-button">
+              <a *ngIf="menuType==='admin'" (click)="logout()" >Logout</a> 
+          </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ 

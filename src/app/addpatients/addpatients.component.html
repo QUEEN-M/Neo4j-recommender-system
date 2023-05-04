@@ -1,0 +1,31 @@
+<div class="container extra_container">
+    <div class="row">
+        <div class="md-col-12">Add Patient</div>
+    </div>
+
+    <form [formGroup]="ngForm" (ngSubmit)="onsubmit(ngForm)" autocomplete="off">
+        <div class="row">
+            <div class="col-md-6"> Patient Name </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="name" formControlName="NAME"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Patient ID </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="id" formControlName="ID"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Patient Age </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="age" formControlName="AGE"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Patient Tel </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="tel" formControlName="TEL"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><input type="submit" class="btn btn-outline-danger" name="submit" formControlName="submit" routerlink="/display-patient" routerLinkActive="active">
+            </div>
+        </div>
+    
+    </form>
+    
+</div>
+

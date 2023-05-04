@@ -1,0 +1,10 @@
+<div class="sign-up">
+    <h1>Sign-Up</h1>
+    <form [formGroup]="ngForm" (ngSubmit)="signup(ngForm)" autocomplete="off" class="signup-form">
+        <input class="form-input" type="text"  name="name" placeholder="Enter Name" formControlName="name">
+        <input class="form-input" type="password" name="password" placeholder="Enter Password" formControlName="password">
+        <input class="form-input" type="text"   name="email"  placeholder="Enter Email" formControlName="email">
+        <input class="form-btn" type="submit" value="SignUp" name="submit" formControlName="submit">
+        <a class="login-link" routerLink="/login"> Already have an Account? Click here</a>
+    </form>
+</div>
