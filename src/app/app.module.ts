@@ -16,7 +16,11 @@ import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
-import { PatientsComponent } from './patients/patients.component';@NgModule({
+import { PatientsComponent } from './patients/patients.component';
+import { AdddoctorsComponent } from './adddoctors/adddoctors.component';
+import { DisplaydoctorsComponent } from './displaydoctors/displaydoctors.component';
+import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
+import { DoctorsComponent } from './doctors/doctors.component';@NgModule({
   declarations: [
     AppComponent,
     AddpatientsComponent,
@@ -27,6 +31,10 @@ import { PatientsComponent } from './patients/patients.component';@NgModule({
     SignUpComponent,
     LoginComponent,
     PatientsComponent,
+    AdddoctorsComponent,
+    DisplaydoctorsComponent,
+    UpdateDoctorComponent,
+    DoctorsComponent,
     
 
   ],

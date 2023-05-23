@@ -1,0 +1,33 @@
+<div class="container extra_container">
+    <div class="row">
+        <div class="md-col-12">Add Doctor</div>
+    </div>
+
+    <form [formGroup]="ngForm" (ngSubmit)="updateData(ngForm)" autocomplete="off">
+        <div class="row">
+            <div class="col-md-6"> Doctor Name </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="name" formControlName="name"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Doctor ID </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="id" formControlName="id"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Doctor Age </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="age" formControlName="age"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Doctor Tel </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="tel" formControlName="tel"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"> Doctor Specialty </div>
+            <div class="col-md-6"><input type="text" class="form-control" name="tel" formControlName="Specialty"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12"><input type="submit" class="btn btn-outline-danger" name="submit" formControlName="submit"></div>
+        </div>
+    </form>
+    
+</div>

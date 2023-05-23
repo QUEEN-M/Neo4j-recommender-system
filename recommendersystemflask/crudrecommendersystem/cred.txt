@@ -1,1 +1,0 @@
-neo4j,Mimidj2000@,bolt://localhost:7687

@@ -15,7 +15,7 @@ export class SideNavComponent implements OnInit{
   ngOnInit(): void {
     this.route.events.subscribe((val:any)=>{
       if(val.url){
-        if (localStorage.getItem('Admin') && val.url.includes('patient'))
+        if (localStorage.getItem('Admin') && val.url.includes('patient') || val.url.includes('doctor'))
         {
           console.warn('in admin area')
           this.menuType="admin"
