@@ -12,19 +12,19 @@ export class DoctorsService {
   constructor(
     private httpClient : HttpClient
   ) { }
-  public addDoctor(name:any,id:any,age:any,tel:any,specialty:any){
+  public addDoctor(name:any,id:any,age:any,tel:any,lieu:any,specialty:any){
 
-    return this.httpClient.post<Doctors>(this.baseUrl+'doctors',{name,id,age,tel,specialty})
+    return this.httpClient.post<Doctors>(this.baseUrl+'doctors',{name,id,age,tel,lieu,specialty})
     .pipe(map((Doctors:any) =>{
       return Doctors;
     }))
   }
   public displayDoctor(){
-    return this.httpClient.get<Doctors>(this.baseUrl+'display')
+    return this.httpClient.get<Doctors>(this.baseUrl+'displaydoctors')
   }
 
   public deleteDoctor(id:any){
-    return this.httpClient.delete(this.baseUrl+'delete/'+id)
+    return this.httpClient.delete(this.baseUrl+'deletedoctor/'+id)
   }
 
   public getDoctorbyId(id:any)
@@ -33,7 +33,7 @@ export class DoctorsService {
   }
 
   public updateDoctor(doctors:any){
-    return this.httpClient.put<Doctors>(this.baseUrl+'updatedoctor/'+doctors.ID,doctors)
+    return this.httpClient.put<Doctors>(this.baseUrl+'updatedoc/'+doctors.ID,doctors)
   }
 
 }

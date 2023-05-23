@@ -21,7 +21,8 @@ export class AdddoctorsComponent implements OnInit{
         ID: ['',Validators.required],
         AGE: ['',Validators.required],
         TEL: ['',Validators.required],
-        SPECIALTY:['',Validators.required]
+        SPECIALTY:['',Validators.required],
+        LIEU:['',Validators.required]
       });
 
   }
@@ -33,6 +34,7 @@ export class AdddoctorsComponent implements OnInit{
       this.ngForm.value.ID,
       this.ngForm.value.AGE,
       this.ngForm.value.TEL,
+      this.ngForm.value.LIEU,
       this.ngForm.value.SPECIALTY
     ).pipe(first()).subscribe(response =>{this.route.navigate(['display-doctor'])})
   }
