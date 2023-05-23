@@ -1,7 +1,18 @@
+.background-image {
+    position: relative;
+    background-image: url('/assets/img/background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+  }
 .login h1{
     text-align: center;
     margin-bottom: 40px;
     margin-top: 60px;
+    color: aliceblue;
     
 }
 p{
@@ -9,20 +20,22 @@ p{
     color: red;
     
 }
-.form-btn{
-    width: 120px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 600px;
-    color: white;
-    transition: all .5s ease;
-    background-color: #06444B;
-
-
+.items{
+    display: flex;
 }
-.form-btn:hover{
-    background-color:#1D94A3 ;
-}
+.card {
+    background-color: transparent;
+    width: 400px;
+    padding: 20px;
+    border: none;
+    margin-top: 50px;
+    margin-right: 410px;
+  }
+.card-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+  }
 .signup-form{
     display: flex;
     justify-content: center;
@@ -31,4 +44,20 @@ p{
 .form-input{
     width: 280px;
     height: 50px;
+    border: 1px solid black;
+    border-radius: 4px ;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: #06444B;
+    border: 2px solid #06444B;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #1D94A3;
+    border: 2px solid #1D94A3;
 }

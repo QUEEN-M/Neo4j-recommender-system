@@ -16,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
-import { PatientsComponent } from './patients/patients.component';@NgModule({
+import { PatientsComponent } from './patients/patients.component';
+import { HomeComponent } from './home/home.component';@NgModule({
   declarations: [
     AppComponent,
     AddpatientsComponent,
@@ -27,6 +28,7 @@ import { PatientsComponent } from './patients/patients.component';@NgModule({
     SignUpComponent,
     LoginComponent,
     PatientsComponent,
+    HomeComponent,
     
 
   ],

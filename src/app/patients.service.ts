@@ -12,9 +12,9 @@ export class PatientsService {
   constructor(
     private httpClient : HttpClient
   ) { }
-  public postPatient(name:any,id:any,age:any,tel:any){
+  public postPatient(name:any,id:any,age:any,tel:any,symptoms:any){
 
-    return this.httpClient.post<Patients>(this.baseUrl+'patients',{name,id,age,tel})
+    return this.httpClient.post<Patients>(this.baseUrl+'patients',{name,id,age,tel,symptoms})
     .pipe(map((Patients:any) =>{
       return Patients;
     }))

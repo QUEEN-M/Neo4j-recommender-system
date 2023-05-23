@@ -50,8 +50,6 @@ a:hover{
 }
 
 .item-button a{
-    width: 120px;
-    height: 50px;
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -81,4 +79,19 @@ a:hover{
 .side-nav-button:hover{
     background-color:#1D94A3 ;
     border-radius: 30%;
+}
+.btn{
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: #06444B;
+    border: 2px solid #06444B;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin: 8px;
+}
+.btn:hover{
+    background-color: #1D94A3;
+    border: 2px solid #1D94A3;
 }

@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       if(result){
         console.warn(result);
         localStorage.setItem('Admin',JSON.stringify(result))
-        this.route.navigate(['patients']);
+        this.route.navigate(['home']);
         
 
       }else{

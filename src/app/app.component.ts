@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NGFlaskApp';
-  sideNavStatus:boolean=false;
+  sideNavStatus:boolean=true;
 }

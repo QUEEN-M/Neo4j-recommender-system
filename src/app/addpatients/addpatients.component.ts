@@ -20,7 +20,8 @@ export class AddpatientsComponent implements OnInit{
         NAME: ['',Validators.required],
         ID: ['',Validators.required],
         AGE: ['',Validators.required],
-        TEL: ['',Validators.required]
+        TEL: ['',Validators.required],
+        SYMPTOMS: ['',Validators.required]
       });
 
   }
@@ -32,6 +33,7 @@ export class AddpatientsComponent implements OnInit{
       this.ngForm.value.ID,
       this.ngForm.value.AGE,
       this.ngForm.value.TEL,
+      this.ngForm.value.SYMPTOMS
     ).pipe(first()).subscribe(response =>{this.route.navigate(['display-patient'])})
   }
   

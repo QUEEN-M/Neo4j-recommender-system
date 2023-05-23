@@ -6,15 +6,17 @@
             <th class="title"> Id</th>
             <th class="title"> Age</th>
             <th class="title"> Tel</th>
+            <th class="title"> Symptoms</th>
             <th class="title">Action</th>
         </thead>
         <tbody>
             <tr *ngFor="let pat of patients">
-                <td >{{pat.NAME}}</td>
-                <td >{{pat.ID}}</td>
-                <td >{{pat.AGE}}</td>
-                <td >{{pat.TEL}}</td>
-                <td class="action">
+                <td class="item">{{pat.NAME}}</td>
+                <td class="item" >{{pat.ID}}</td>
+                <td class="item">{{pat.AGE}}</td>
+                <td class="item">{{pat.TEL}}</td>
+                <td class="item">{{pat.SYMPTOMS}}</td>
+                <td class="item" class="action">
                     <a class="btn btn-danger" [routerLink]="['/update/',pat.ID]">Update</a>
                     <button  class="btn btn-outline-danger" (click)="deletePatient(pat.ID)">Delete</button>
                  </td>

@@ -9,22 +9,22 @@
 
         <div class="nav-items">
             <div class="item">
-                <a href="/">Home</a>
+                <a routerLink="home" routerLinkActive="active">Home</a>
             </div>
             <div class="item">
                 <a href="/">Dashboard</a>
             </div>
             <div class="item-button">
-                <a *ngIf="menuType==='default'"  routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+                <button  *ngIf="menuType==='default'" type="button" class="btn btn-info " routerLink="/sign-up" routerlinkactive="active">Sign Up</button>
             </div>
             <div class="item-button">
-                <a *ngIf="menuType==='default'"  routerLink="login" routerLinkActive="active" >Login</a> 
+                <button  *ngIf="menuType==='default'" type="button" class="btn btn-info " routerLink="/login" routerlinkactive="active">Login</button>
             </div>
             <div class="item-button">
-              <a *ngIf="menuType==='admin'"   >Admin</a> 
+                <button  *ngIf="menuType==='admin'" type="button" class="btn btn-info ">Admin</button>
           </div>
             <div class="item-button">
-              <a *ngIf="menuType==='admin'" (click)="logout()" >Logout</a> 
+              <button *ngIf="menuType==='admin'" type="button" class="btn btn-info " (click)="logout()" >Logout </button>  
           </div>
 
     </div>

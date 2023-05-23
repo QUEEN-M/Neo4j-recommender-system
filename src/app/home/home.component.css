@@ -1,0 +1,27 @@
+.background-image {
+    position: relative;
+    background-image: url('/assets/img/banniere-medicale-stethoscope.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 550px; /* Adjust the height as needed */
+  }
+.item-btn{
+    position: absolute;
+    top: 400px;
+    left: 450px;
+}
+.btn{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #06444B;
+    border: 2px solid #06444B;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #1D94A3;
+    border: 2px solid #1D94A3;
+}
