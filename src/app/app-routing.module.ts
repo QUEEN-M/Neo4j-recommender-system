@@ -6,7 +6,12 @@ import { UpdatePatientComponent } from "./update-patient/update-patient.componen
 import { SignUpComponent } from "./sign-up/sign-up.component";
 import { LoginComponent } from "./login/login.component";
 import { PatientsComponent } from "./patients/patients.component";
+
 import { HomeComponent } from "./home/home.component";
+
+import { AdddoctorsComponent } from "./adddoctors/adddoctors.component";
+import { DisplaydoctorsComponent } from "./displaydoctors/displaydoctors.component";
+import { DoctorsComponent } from "./doctors/doctors.component";
 
 
 
@@ -14,10 +19,13 @@ const routes:Routes=[
     {path:'home',component:HomeComponent},
     {path:'post-patient',component:AddpatientsComponent},
     {path:'display-patient',component:DisplaypatientsComponent},
+    {path:'add-doctor',component:AdddoctorsComponent},
+    {path:'display-doctor',component:DisplaydoctorsComponent},
     {path:'update/:id',component:UpdatePatientComponent},
     {path:'sign-up',component:SignUpComponent},
     {path:'login',component:LoginComponent},
-    {path:'patients',component:PatientsComponent}
+    {path:'patients',component:PatientsComponent},
+    {path:'doctors',component:DoctorsComponent}
 
     
 ]

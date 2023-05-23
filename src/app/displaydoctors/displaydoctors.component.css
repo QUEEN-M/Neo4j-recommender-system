@@ -1,0 +1,26 @@
+.btn-danger{
+    width: 80px;
+    margin-left: 10px;
+}
+.btn-outline-danger{
+    width: 80px;
+    margin-left: 5px;
+
+}
+.action{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    text-align: center;
+    width: 80px;
+    
+}
+h1{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 28px;
+}
