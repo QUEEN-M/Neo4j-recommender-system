@@ -17,14 +17,17 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { PatientsComponent } from './patients/patients.component';
-
-import { HomeComponent } from './home/home.component';@NgModule({
-
+import { HomeComponent } from './home/home.component';
+import { AdddoctorsComponent } from './adddoctors/adddoctors.component';
+import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { DisplaydoctorsComponent } from './displaydoctors/displaydoctors.component';
 import { AdddoctorsComponent } from './adddoctors/adddoctors.component';
 import { DisplaydoctorsComponent } from './displaydoctors/displaydoctors.component';
 import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
-import { DoctorsComponent } from './doctors/doctors.component';@NgModule({
+import { DoctorsComponent } from './doctors/doctors.component';
 
+@NgModule({
   declarations: [
     AppComponent,
     AddpatientsComponent,
@@ -35,16 +38,12 @@ import { DoctorsComponent } from './doctors/doctors.component';@NgModule({
     SignUpComponent,
     LoginComponent,
     PatientsComponent,
-
     HomeComponent,
     AdddoctorsComponent,
     DisplaydoctorsComponent,
     UpdateDoctorComponent,
-    DoctorsComponent,
->
-    
-
-  ],
+    DoctorsComponent
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
